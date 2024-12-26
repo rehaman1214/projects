@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast System</title>
+  <link rel="stylesheet" href="weather.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="weather-app">
+    <h1>Weather Forecast</h1>
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button id="search-btn">Get Weather</button>
+    </div>
+    <div id="error-message" class="hidden error-message"></div>
+    <div id="weather-details" class="hidden weather-details">
+      <h2 id="city-name"></h2>
+      <p id="temperature"><i class="fas fa-thermometer-half"></i> Temperature: <span id="temp-val"></span>°C</p>
+      <p id="weather"><i class="fas fa-cloud-sun"></i> Condition: <span id="condition-val"></span></p>
+      <p id="humidity"><i class="fas fa-tint"></i> Humidity: <span id="humidity-val"></span>%</p>
+      <p id="wind"><i class="fas fa-wind"></i> Wind Speed: <span id="wind-val"></span> m/s</p>
+    </div>
+    <div class="rain-animation hidden"></div>
+  </div>
+  <script src="weather.js"></script>
+</body>
+</html>
